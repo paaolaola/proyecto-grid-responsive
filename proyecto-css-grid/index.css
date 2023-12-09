@@ -28,9 +28,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: #0f2027;
-    padding: 2rem;
+    padding: 1rem;
     color: whitesmoke;
-    padding: 2rem;
     position: sticky;
     top: 0;
     width: 100%;
@@ -71,7 +70,7 @@ li {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
     text-align: justify;
     background: #c6ffdd;
     background: -webkit-linear-gradient(to left, #fbd786, #f7797d, #c6ffdd);
@@ -95,9 +94,8 @@ h4 {
     color: aliceblue;
     border-style: none;
     border-radius: 10px;
-    width: 50%;
-    margin-top: 20px;
-    min-height: 60px;
+    min-height: 40px;
+    width: 25%;
     font-family: "Edu QLD Beginner", cursive;
     cursor: pointer;
     border: 4px solid var(--color-coral);
@@ -145,14 +143,15 @@ h4 {
 
 .main {
     border: 2px solid var(--color-coral);
-    padding: 60px;
+    padding: 30px;
     border-radius: 10px;
     background-color: rgb(255, 229, 229);
-    font-size: 20px;
+    font-size: 1rem;
+    text-align: justify;
 }
 .main-box {
     border: 2px solid var(--color-coral);
-    padding: 60px;
+    padding: 20px;
     border-radius: 10px;
     background-color: rgb(255, 229, 229);
     font-size: 20px;
@@ -212,9 +211,9 @@ h3 {
     background: linear-gradient(to left, #203a43, #0f2027);
     color: aliceblue;
     border-style: none;
-    min-height: 50px;
+    min-height: 40px;
     border-radius: 10px;
-    width: 50%;
+    width: 40%;
     font-family: "Edu QLD Beginner", cursive;
     cursor: pointer;
     border: 4px solid var(--color-coral);
@@ -260,6 +259,9 @@ footer {
 }
 /*Media queries*/
 @media only screen and (max-width: 1150px) {
+    .banner-btn {
+        width: 15%;
+    }
     .container-section-1 {
         grid-template-columns: 1fr;
     }
@@ -279,21 +281,37 @@ footer {
     }
 
     .fruit-form .form-btn {
-        width: 20%;
+        width: 15%;
     }
     .fruit-form input {
         width: 50%;
     }
+
     h4 {
         margin: 20px;
         font-size: 20px;
     }
-    .banner-btn {
-        width: 20%;
-    }
 }
 
 @media only screen and (max-width: 865px) {
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .banner-btn {
+        width: 20%;
+        font-size: 15px;
+    }
     .container-section-1 {
         grid-template-columns: 1fr;
     }
@@ -304,13 +322,31 @@ footer {
     .card img {
         position: relative;
     }
+    .img-main {
+        margin: 20px auto;
+        padding: 20px auto;
+    }
 
+    .list-fruit {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
     .container-section-3 {
         grid-template-columns: 1fr;
     }
-    .card-main img {
-        width: 400px;
-        height: 400px;
+
+    .list-nav {
+        margin: 5px;
+        font-size: 18px;
+    }
+    .fruit-form .form-btn {
+        width: 15%;
+        margin-top: 20px;
+        min-height: 35px;
+        font-size: 15px;
+    }
+    .fruit-form input {
+        width: 100%;
     }
 }
 
@@ -327,8 +363,9 @@ footer {
     li {
         margin: 5px;
 
-        font-size: 9px;
+        font-size: 14px;
     }
+
     .container-section-1 {
         grid-template-columns: 1fr;
     }
@@ -360,11 +397,9 @@ footer {
         width: 200px;
         height: 200px;
     }
-    .banner-btn {
-        width: 40%;
-    }
+
     .fruit-form .form-btn {
-        width: 40%;
+        width: 25%;
     }
 }
 
@@ -372,12 +407,24 @@ footer {
     body {
         width: 100%;
     }
-    .main-box {
-        width: 80%;
+
+    .list-fruit {
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: center;
     }
+
     .fruit-form form {
         padding: 5px;
+        width: 100%;
+    }
+
+    .fruit-form input {
         width: 80%;
+        height: 40px;
+    }
+    .banner-btn {
+        width: 30%;
     }
     .card-info img {
         width: 200px;
@@ -394,7 +441,7 @@ footer {
     }
     h4 {
         font-size: 15px;
-        text-align: center;
+        text-align: justify;
     }
     li {
         font-size: 10px;
