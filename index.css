@@ -62,7 +62,7 @@ li {
     width: 90%;
     max-width: 1500px;
     gap: 20px;
-    position: relative; /* Asegura que el z-index funcione correctamente */
+    position: relative;
     z-index: 1;
 }
 
